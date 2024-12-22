@@ -507,7 +507,7 @@ if (datingToggleBtn) {
 // Event Listeners //////////////////////////////////////////
 
 //restart toggles when entering homescreen
-if (window.location.href.includes("index")) {
+if (document.querySelector('header')) {
     window.addEventListener('load', () => {
         sessionStorage.setItem("sexToggle", false);
         document.getElementById('sexToggleBtn').checked = false;

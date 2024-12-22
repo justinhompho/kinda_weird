@@ -251,7 +251,7 @@ h3 {
     }
 
     input[type="checkbox"]:checked+.card {
-        /* animation: bounce 3s ease-in-out infinite; */
+        animation: none;
         border: .25rem solid var(--secondary);
         box-shadow: var(--card-shadow);
 
