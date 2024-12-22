@@ -1,17 +1,17 @@
 'use strict';
+
+// unloading transition for home page
 const playButton = document.getElementById('play-button');
 if (playButton) {
     playButton.addEventListener('click', function () {
         const content = document.body;
-
         content.classList.add('fadeOut');
-
-
         setTimeout(function () {
             window.location.href = "play.html";
         }, 900);
     });
 }
+
 
 if (window.location.href.includes("play")) {
 
@@ -538,6 +538,7 @@ if (document.querySelector('header')) {
         document.getElementById('relationshipsToggleBtn').checked = false;
         sessionStorage.setItem("datingToggle", false);
         document.getElementById('datingToggleBtn').checked = false;
+        content.classList.remove('fadeOut');
     });
 }
 

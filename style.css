@@ -292,4 +292,10 @@ h3 {
 
 
     }
+
+    .card:hover {
+        transform: translateY(-1rem);
+        box-shadow: var(--card-shadow);
+        transition: transform 0.2s ease-in-out, box-shadow 0.5s ease;
+    }
 }
