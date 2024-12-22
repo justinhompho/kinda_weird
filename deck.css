@@ -1,0 +1,124 @@
+@import url('style.css');
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+}
+
+
+.card {
+    /* background-color: white; */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.5s, opacity 0.5s;
+    cursor: grab;
+}
+
+.real_talk {
+    background-color: var(--real-talk-bg);
+    color: var(--real-talk-text);
+}
+
+.dating {
+    background-color: var(--dating-bg);
+    color: var(--dating-text);
+}
+
+.relationships {
+    background-color: var(--relationships-bg);
+    color: var(--relationships-text);
+}
+
+.sex {
+    background-color: var(--sex-bg);
+    color: var(--sex-text);
+}
+
+.card:hover {
+    transform: translateY(-.5rem);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out, box-shadow 0.5s ease;
+}
+
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.card h1 {
+    font-size: var(--card-h1-size);
+    margin: 0;
+    line-height: .8;
+    transform: translateY(.5rem);
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.card-category-text {
+    text-decoration: underline;
+}
+
+/*//////////////////////////////////////////////*/
+/* Stack styling */
+/* .card:nth-child(1) {
+    z-index: 4;
+}
+
+.card:nth-child(2) {
+    z-index: 3;
+    transform: scale(0.95) translateY(-20px);
+}
+
+.card:nth-child(3) {
+    z-index: 2;
+    transform: scale(0.9) translateY(-40px);
+}
+
+
+.card:nth-child(4) {
+    z-index: 1;
+    transform: scale(0.85) translateY(-60px);
+} */
+
+/* Next button styling */
+button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}

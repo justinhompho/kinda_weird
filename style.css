@@ -1,0 +1,180 @@
+:root {
+    --primary: #2e0219;
+    --secondary: #ff758f;
+
+    --real-talk-bg: #dec201;
+    --real-talk-text: #7b0266;
+
+    --dating-bg: #d2bcd2;
+    --dating-text: #e50e07;
+
+    --relationships-bg: #00383e;
+    --relationships-text: #1eb2e0;
+
+    --sex-bg: #36008a;
+    --sex-text: #d3004c;
+
+    --card-h1-size: 4.75rem;
+    --card-p-size: 1.25rem;
+    --card-height: 18rem;
+    --card-width: 12.5rem;
+    --card-border-radius: 6%;
+    --card-shadow: 20px 20px 10px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.08);
+
+}
+
+body {
+    background-color: var(--primary);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 7.5rem;
+    color: var(--secondary);
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+    margin-bottom: 3rem;
+}
+
+.real-talk {
+    background-color: var(--real-talk-bg);
+    color: var(--real-talk-text);
+}
+
+.dating {
+    background-color: var(--dating-bg);
+    color: var(--dating-text);
+}
+
+.relationships {
+    background-color: var(--relationships-bg);
+    color: var(--relationships-text);
+}
+
+.sex {
+    background-color: var(--sex-bg);
+    color: var(--sex-text);
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    gap: 1.5rem;
+}
+
+.card h1 {
+    font-size: var(--card-h1-size);
+    margin: 0;
+    line-height: .8;
+}
+
+.card p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-size: var(--card-p-size);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: var(--card-width);
+    height: var(--card-height);
+    border-radius: var(--card-border-radius);
+    cursor: pointer;
+    box-shadow: var(--card-shadow);
+
+    /* transition: transform 0.5s ease-in-out, box-shadow 0.5s ease; */
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(-1.5rem);
+    }
+
+    25% {
+        transform: translateY(-.5rem);
+    }
+
+    50% {
+        transform: translateY(-1.5rem);
+    }
+
+    75% {
+        transform: translateY(-.5rem);
+    }
+}
+
+/* Hide the Checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Apply the bounce animation when checkbox is selected */
+input[type="checkbox"]:checked+.card {
+    animation: bounce 3s ease-in-out infinite;
+    border: .25rem solid var(--secondary);
+    box-shadow: var(--card-shadow);
+
+    /* transform: translateY(-30px); */
+    /* transition: transform 0.5s ease-in-out, box-shadow 0.5s ease; */
+}
+
+/* Existing hover effect */
+.card:hover {
+    transform: translateY(-1.5rem);
+    box-shadow: var(--card-shadow);
+    transition: transform 0.2s ease-in-out, box-shadow 0.5s ease;
+}
+
+/* Return to Original Position Smoothly */
+.card {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease;
+    border: .25rem solid transparent;
+    padding: 1rem;
+
+
+}
+
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+
+button {
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: .5rem;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
