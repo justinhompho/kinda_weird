@@ -520,7 +520,7 @@ if (window.location.href.includes("index")) {
     });
 }
 
-if (window.location.pathname.endsWith("play.html")) {
+if (window.location.href.includes("play")) {
     playGame();
 }
 /////////////////////////////////////////

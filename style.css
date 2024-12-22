@@ -250,4 +250,12 @@ h3 {
         margin-top: 0;
     }
 
+    input[type="checkbox"]:checked+.card {
+        /* animation: bounce 3s ease-in-out infinite; */
+        border: .25rem solid var(--secondary);
+        box-shadow: var(--card-shadow);
+
+        /* transform: translateY(-30px); */
+        /* transition: transform 0.5s ease-in-out, box-shadow 0.5s ease; */
+    }
 }
