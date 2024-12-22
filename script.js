@@ -539,6 +539,7 @@ if (document.querySelector('header')) {
         sessionStorage.setItem("datingToggle", false);
         document.getElementById('datingToggleBtn').checked = false;
         content.classList.remove('fadeOut');
+        document.body.style.opacity = "1";
     });
 }
 
