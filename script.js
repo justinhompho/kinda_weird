@@ -1,5 +1,5 @@
 'use strict';
-if (window.location.pathname.endsWith("play.html")) {
+if (window.location.pathname.includes("play")) {
 
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -73,7 +73,7 @@ if (window.location.pathname.endsWith("play.html")) {
                 const moveOutWidth = document.body.clientWidth;
                 const endX = deltaX > 0 ? moveOutWidth : -moveOutWidth;
 
-                const keep = Math.abs(deltaX) < 120; //radius of not letting card
+                const keep = Math.abs(deltaX) < 60; //radius of not letting card
 
                 if (keep) {
                     currentCard.style.transform = '';
@@ -507,7 +507,7 @@ if (datingToggleBtn) {
 // Event Listeners //////////////////////////////////////////
 
 //restart toggles when entering homescreen
-if (window.location.pathname.endsWith("index.html")) {
+if (window.location.pathname.includes("index")) {
     window.addEventListener('load', () => {
         sessionStorage.setItem("sexToggle", false);
         document.getElementById('sexToggleBtn').checked = false;

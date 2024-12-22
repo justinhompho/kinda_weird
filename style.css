@@ -178,3 +178,76 @@ button:hover {
     color: var(--primary);
     transition: all 0.3s ease-in-out;
 }
+
+.spacer {
+    height: 5vh;
+}
+
+.instructions {
+    color: var(--secondary);
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+    text-decoration: underline;
+}
+
+.instructions p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.recommended {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+
+}
+
+.s-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 1rem;
+}
+
+.s-r p {
+    margin-bottom: 0rem;
+    text-align: left;
+}
+
+.footer p {
+    color: var(--secondary);
+    margin: .5rem;
+    font-size: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        margin: .5rem;
+        font-size: 3.75rem;
+        line-height: 1;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: .5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-container {
+        margin-top: 0;
+    }
+
+}
