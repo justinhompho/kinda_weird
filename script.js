@@ -1,4 +1,18 @@
 'use strict';
+const playButton = document.getElementById('play-button');
+if (playButton) {
+    playButton.addEventListener('click', function () {
+        const content = document.body;
+
+        content.classList.add('fadeOut');
+
+
+        setTimeout(function () {
+            window.location.href = "play.html";
+        }, 900);
+    });
+}
+
 if (window.location.href.includes("play")) {
 
     document.addEventListener('DOMContentLoaded', () => {

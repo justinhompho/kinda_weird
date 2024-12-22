@@ -28,6 +28,12 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     margin: 0;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fadeOut {
+    opacity: 0;
+    transform: translateY(50px);
 }
 
 header {
