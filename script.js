@@ -1,5 +1,5 @@
 'use strict';
-if (window.location.pathname.includes("play")) {
+if (window.location.href.includes("play")) {
 
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -507,7 +507,7 @@ if (datingToggleBtn) {
 // Event Listeners //////////////////////////////////////////
 
 //restart toggles when entering homescreen
-if (window.location.pathname.includes("index")) {
+if (window.location.href.includes("index")) {
     window.addEventListener('load', () => {
         sessionStorage.setItem("sexToggle", false);
         document.getElementById('sexToggleBtn').checked = false;
