@@ -12,6 +12,11 @@ if (window.location.href.includes("play")) {
         let lastX = 0;
         let lastY = 0;
 
+        setTimeout(() => {
+            cardContainer.classList.add('visible');
+            nextButton.classList.add('visible');
+        }, 0);
+
         function initCards() {
             const newCards = document.querySelectorAll('.card:not(.removed)');
             newCards.forEach((card, index) => {
@@ -103,6 +108,7 @@ if (window.location.href.includes("play")) {
 
         // NEXT BUTTON //////////////////////////
         nextButton.addEventListener('click', () => {
+            nextButton.disabled = true;
             const currentCard = document.querySelector('.card:not(.removed)');
             if (!currentCard) return;
             currentCard.classList.add('removed');
@@ -111,6 +117,7 @@ if (window.location.href.includes("play")) {
                 cardContainer.removeChild(currentCard);
                 createNewCard();
                 initCards();
+                nextButton.disabled = false;
             }, 300);
         });
     });

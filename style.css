@@ -158,7 +158,7 @@ input[type="checkbox"]:checked+.card {
 .btn-container {
     display: flex;
     justify-content: center;
-    margin: 5% 0;
+    margin: 3rem 0;
 }
 
 button {
@@ -180,29 +180,38 @@ button:hover {
 }
 
 .spacer {
-    height: 5vh;
+    height: 3rem;
 }
 
 .instructions {
     color: var(--secondary);
     font-size: 1.5rem;
     text-align: center;
-    margin: 0;
+    /* margin: 0 50%; */
+    /* max-width: 60rem; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
 }
 
 h3 {
     margin: 0;
     text-decoration: underline;
+    width: 25rem;
 }
 
 .instructions p {
     font-size: 1.25rem;
     margin-bottom: 2rem;
+    /* width: 50rem; */
+
 }
 
 .steps {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 25rem;
 }
 
@@ -210,6 +219,8 @@ h3 {
     display: flex;
     flex-direction: column;
     width: 25rem;
+    align-items: center;
+
 
 }
 
@@ -220,6 +231,7 @@ h3 {
     flex-wrap: wrap;
     gap: 3rem;
     margin: 1rem;
+    width: 80vw;
 }
 
 .s-r p {
@@ -241,7 +253,7 @@ h3 {
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         margin: .5rem;
         margin-bottom: 1rem;
     }
@@ -257,5 +269,21 @@ h3 {
 
         /* transform: translateY(-30px); */
         /* transition: transform 0.5s ease-in-out, box-shadow 0.5s ease; */
+    }
+
+    .steps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 22rem;
+    }
+
+    .recommended {
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        align-items: center;
+
+
     }
 }
