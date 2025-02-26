@@ -17,7 +17,7 @@ if (playButton) {
 if (window.location.href.includes("play")) {
 
     document.addEventListener('DOMContentLoaded', () => {
-
+        console.log("Loading Deck...");
         initDisplayCards();
         const cardContainer = document.querySelector('.card-container');
         const cards = document.querySelectorAll('.card');
@@ -405,7 +405,7 @@ const playDeck = new Queue();
 function playGame() {
     // creating an unshuffled play deck with toggled categories
     var pdeck = [];
-
+    console.log("Play Game Function executed...");
     console.log("real talk flag:", sessionStorage.getItem("real_talkToggle"));
     console.log("relationships flag:", sessionStorage.getItem("relationshipsToggle"));
     console.log("dating flag:", sessionStorage.getItem("datingToggle"));
