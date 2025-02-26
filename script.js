@@ -4,6 +4,7 @@
 const playButton = document.getElementById('play-button');
 if (playButton) {
     playButton.addEventListener('click', function () {
+        console.log("Starting Game...");
         const content = document.body;
         content.classList.add('fadeOut');
         setTimeout(function () {
